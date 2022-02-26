@@ -11,11 +11,8 @@ ciclos = frecuencia * tiempos
 
 fracciones, enteros = np.modf(ciclos)
 data = fracciones
-
 data = fracciones - 0.5
-
 data = np.abs(data)
-
 data = data - data.mean()
 
 alto, bajo = abs(max(data)), abs(min(data))
