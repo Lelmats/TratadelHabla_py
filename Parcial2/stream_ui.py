@@ -30,8 +30,8 @@ class StreamThread(Thread):
 
     try:
         with sd.Stream(
-            device=(), #elegir dispositivo de audio de entrada y salida, dejar vacio toma los defaults
-            blocksize=11025, #0 es que la tarjeta de sonido decide el mejor tamañom es posible que sea variable
+            device=(), 
+            blocksize=11025,
             samplerate=44100,
             channels=1,
             dtype = np.int16,
@@ -43,7 +43,7 @@ class StreamThread(Thread):
 
     except Exception as e:
         print(str(e))
-        #Actualizar etiqueta valor ff
+       
         
         Return
 
@@ -65,7 +65,7 @@ class StreamThread(Thread):
         except Exception as e:
             print(str(e))
 
-#Heredamos de Tk para hcaer una ventana
+#Heredamos de Tk para hacer una ventana
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
