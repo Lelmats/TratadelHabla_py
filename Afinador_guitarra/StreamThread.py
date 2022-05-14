@@ -26,7 +26,6 @@ class StreamThread(Thread):
 
         if frecuencia_fundamental <= 80:
             print("Apretar cuerda para tecla 6 (E2)")
-
         if frecuencia_fundamental >= 81 and frecuencia_fundamental <= 83:
             print("Tecla 6 (E)")
         if frecuencia_fundamental >= 84 and frecuencia_fundamental <= 100:
