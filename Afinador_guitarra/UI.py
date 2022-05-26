@@ -19,7 +19,7 @@ class App:
         
         # define the RGB value for white,
         # green, yellow, orange colour
-        white=(255, 255, 255)
+        black=(0, 0, 0)
         yellow=(255, 255, 0)
         green=(0, 255, 255)
         orange=(255, 100, 0)
@@ -29,18 +29,12 @@ class App:
         # 3rd parameter is font colour and
         # 4th parameter is Font background
         letter1=Font.render("H", False, orange, yellow)
-        letter2=Font.render("E", False, orange, green)
+        letter2=Font.render("E+", False, orange)
         letter3=Font.render("M", False, orange, yellow)
         letter4=Font.render("A", False, orange, green)
         letter5=Font.render("N", False, orange, yellow)
         letter6=Font.render("T", False, orange, green)
         letter7=Font.render("H", False, orange, yellow)
-        
-        # assigning values to
-        # i and c variable
-        i=0
-        c=1
-
 
         #iniciar StreamThread
         self.stream_thread = StreamThread(self)
@@ -51,7 +45,7 @@ class App:
         while True:
             # completely fill the surface object
             # with white color
-            win.fill(white)
+            win.fill(black)
             win.blit(letter2, (180,100))     
 
             # iterate over the list of Event objects
